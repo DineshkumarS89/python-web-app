@@ -1,0 +1,39 @@
+<html>
+    <title>Simple Web App using Flask</title>
+    <head>
+        <style>
+            #text1
+            {
+                height:200px;
+                font-size:14pt;
+            }
+            #title{
+                color: black;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+        </style>
+
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function post_info(){
+            var fname= $('#fname').val();
+            var response = $.ajax({
+                type: 'POST',
+                url:"/submit",
+                data:{First: fname},
+                success: function (data) {
+                    document.write(data)
+                }       
+            })
+        }
+    </script>
+    <body>
+        <p>
+            <h3>Please provide the below requested details</h3>
+            Full Name: <input type="text" id="fname" name="fname"><br><br>
+            <button id="submit" onclick="post_info()">Submit</button>
+        </p>
+    </body>
+</html>
