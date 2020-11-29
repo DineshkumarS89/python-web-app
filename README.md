@@ -1,5 +1,9 @@
 # python-web-app
-Simple Python web app with automated test
+Simple python web app with an Input form to enter the name and print the name in the next page.\
+Flask framework used to serve the web page and gather the details.
+
+# Python automated test
+Automated test created in python using requests. Based on the user input, load will be generated and min/avg/max response time will be provided for each page.
 
 # Steps to run the web app
 1. install Flask, requests
