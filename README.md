@@ -13,6 +13,6 @@ Simple Python web app with automated test
     **Sample request** \
     python perf_test.py 10 10 300 \
  2. Sample Output \
-    Home Page: Total Hits: 1500, avg response time: 0.0076, min response time: 0.0030, max response time: 0.03
+    Home Page: Total Hits: 1500, avg response time: 0.0076, min response time: 0.0030, max response time: 0.03 \
     Submit Page: Total Hits: 1500, avg response time: 0.0082, min response time: 0.0030, max response time: 0.05
   
